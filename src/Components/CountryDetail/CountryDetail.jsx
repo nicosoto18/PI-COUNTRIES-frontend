@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { countryDetail } from "../redux/actions";
 import Card from "../Card/Card";
 import { useEffect, useState } from "react";
+import { deleteCountryDetail } from "../redux/actions";
 
 const CountryDetail = () => {
   const { id } = useParams();
@@ -14,6 +15,7 @@ const CountryDetail = () => {
 
   useEffect(() => {
     dispatch(countryDetail(id));
+    return dispatch(deleteCountryDetail())
   }, [id]);
 
   return (

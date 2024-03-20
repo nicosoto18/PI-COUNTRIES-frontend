@@ -1,5 +1,5 @@
 import { ALLCOUNTRIES,COUNTRYNAME,COUNTRYDETAIL,FILTERCARDS,ALLACTIVITIES,FILTERCOUNTRIESACTIVITIES,
-         ORDERCARS} from "./actiontypes";
+         ORDERCARS,DELETECOUNTRYDETAIL} from "./actiontypes";
 
 const initialState = {
     allCountries: [],
@@ -79,6 +79,11 @@ const reducer = (state = initialState, action)=>{
               allCountries: orderAllCountries,
               filterCountries: orderCopy
             }
+        case DELETECOUNTRYDETAIL:
+              return{
+                ...state,
+                countryDetail: []
+              }
         default: return {...state};
     }
 }

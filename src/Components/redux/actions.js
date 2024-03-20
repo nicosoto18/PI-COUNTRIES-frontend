@@ -1,4 +1,4 @@
-import { ALLCOUNTRIES,COUNTRYNAME,COUNTRYDETAIL,FILTERCARDS,ALLACTIVITIES,FILTERCOUNTRIESACTIVITIES,ORDERCARS} 
+import { ALLCOUNTRIES,COUNTRYNAME,COUNTRYDETAIL,FILTERCARDS,ALLACTIVITIES,FILTERCOUNTRIESACTIVITIES,ORDERCARS, DELETECOUNTRYDETAIL} 
         from "./actiontypes";
 import axios from "axios"; 
 
@@ -110,6 +110,18 @@ const orderCountries = (value) => {
   };
 };
 
+ const deleteCountryDetail = ()=>{
+   return (dispatch) =>{
+     try {
+       dispatch({
+         type: DELETECOUNTRYDETAIL,
+     })
+     } catch (error) {
+      
+     }
+   }
+ }
+
 export {
   allCountries,
   countryName,
@@ -119,4 +131,5 @@ export {
   allActivities,
   filterCountriesActivities,
   orderCountries,
+  deleteCountryDetail
 };

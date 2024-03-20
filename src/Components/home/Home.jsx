@@ -25,6 +25,7 @@ const Home = () => {
 
   const handleChangeActivity = (event) => {
     const { value } = event.target;
+    console.log("EL VALUE ES", value)
     if (value === "todas") {
       dispatch(filterCountriesActivities(value));
     } else {
