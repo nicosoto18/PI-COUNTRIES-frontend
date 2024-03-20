@@ -6,6 +6,7 @@ const allCountries = () => {
   return async (dispatch) => {
     try {
       const endpoint = "/countries";
+      console.log("voy a ir a buscar los countries")
       const { data } = await axios.get(endpoint);
       console.log("mi data es", data)
 
