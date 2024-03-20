@@ -1,0 +1,56 @@
+.contenedor{
+    background-color: rgb(197, 197, 235, 0.5);
+    width: 100%;
+    height: 100%;      
+    border: 0.4em solid RGB(15, 81, 9);
+    border-radius: 2em;
+    display: flex;
+}
+
+.card:hover{
+    border:0.3em solid cadetblue;
+}
+
+.imagenn{ 
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenn img{
+    width: 90%;
+    height: auto;
+    background-color: black;     
+}
+.texto{
+    width: 50%;
+    height: 100%;
+   text-align: center;
+   border-right: 0.4em solid RGB(15, 81, 9);
+}
+
+.texto h2{
+  font-size: 4em;
+  text-decoration: underline;
+  margin-top: 0.2em;
+  margin-bottom: 0.3em;
+  
+}
+
+.capital, .subregion, .area, .poblacion{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.texto h3{
+    font-size: 2em;
+    margin-bottom: 0em;
+}
+.texto p{
+    font-size: 1.2em;
+}
+
+
+
