@@ -1,0 +1,127 @@
+.contenedor{
+    width: 100%;
+    height: 48.4em;
+}
+
+.formulario{
+    background-color: rgb(197, 197, 235, 0.8);
+    border: 3px solid RGB(15, 81, 9);
+    border-radius: 10px;
+    width: 30em;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 36%;
+    margin-top: 3%;
+}
+
+.formulario label{
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario input{
+
+    width: 14em;
+    height: 1.1em;
+    margin-top: 0.2em;
+    margin-bottom: 0em;
+    background-color: aliceblue;
+    border: 0.1em solid RGB(15, 81, 9);
+    border-radius: 2px;
+    
+}
+
+.formulario select{
+    width: 15.8em;
+    height: 3em;
+    font-size: 12px;   
+    background-color: aliceblue;
+    margin-top: 0.2em;
+    border: 0.1em solid RGB(15, 81, 9);
+}
+
+
+
+.nombre, .dificultad, .duracion, .paises, .temporada{
+    height: 4.5em;
+    margin-bottom: 1em;    
+}
+
+.temporada option{
+    background-color: aliceblue;
+    color: black;
+    
+}
+
+.formulario p{
+    background-color:#ffcccc;
+    height: 1.4em;
+    margin-top: 0em;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    margin-top: 0;
+    height: 2em; 
+    text-align: center;
+    line-height: 0.5em;
+    border: 1px solid whitesmoke;
+   background-color: RGB(15, 81, 9);
+   color: whitesmoke
+}
+
+.lista{
+    background-color: white;
+    width: 20em;
+    height: 6em;
+    display: grid;
+
+}
+
+.lista ul{
+    background-color: white;
+    border: 1px solid RGB(15, 81, 9);
+    height: 100%;
+    margin: 0;
+     display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-items: start;
+    align-items: center;
+}
+.lista li{
+    width: 3em;
+    height: 1.6em;
+    background-color:RGB(15, 81, 9);
+    border-radius: 10px;
+    color: white;
+    margin-top: 0.6em;
+    margin-right: 0;
+    display: flex;
+    justify-content:center;
+
+}
+
+.lista li:hover{
+    background-color: #ffcccc;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+.labelEspecial{
+    margin-bottom: 0.2em;
+}
+
+.ValorTemporada{
+    color: black;
+    font-weight: 1;
+}

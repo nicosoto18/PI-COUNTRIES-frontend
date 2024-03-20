@@ -1,0 +1,14 @@
+.inputSearch{
+    background-color:white;
+    color: black;
+    border: 2.5px solid black;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.inputSearch:hover{
+    border : 0.1em solid cadetblue;
+}
+.inputSearch:focus{
+    border : 0.1em solid cadetblue;
+}
