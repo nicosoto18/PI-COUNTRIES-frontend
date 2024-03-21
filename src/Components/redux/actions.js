@@ -2,11 +2,11 @@ import { ALLCOUNTRIES,COUNTRYNAME,COUNTRYDETAIL,FILTERCARDS,ALLACTIVITIES,FILTER
         from "./actiontypes";
 import axios from "axios"; 
 
+
 const allCountries = () => {
   return async (dispatch) => {
     try {
       const endpoint = "/countries";
-      console.log("voy a ir a buscar los countries")
       const { data } = await axios.get(endpoint);
       console.log("mi data es", data)
 

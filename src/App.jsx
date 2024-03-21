@@ -6,7 +6,7 @@ import Home from "./Components/home/Home";
 import CountryDetail from "./Components/CountryDetail/CountryDetail.jsx";
 import Form from "./Components/form/Form";
 import axios from "axios";
- axios.defaults.baseURL = "racial-color-production.up.railway.app/"
+axios.defaults.baseURL = "https://racial-color-production.up.railway.app/"
 
 function App() {
   return (
