@@ -1,32 +1,37 @@
 .contenedor{
     width: 100%;
-    height: 48.4em;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .formulario{
     background-color: rgb(197, 197, 235, 0.8);
     border: 3px solid RGB(15, 81, 9);
     border-radius: 10px;
-    width: 30em;
-    height: 40em;
+    width: 35%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 36%;
-    margin-top: 3%;
+    margin: 0 auto;
+    padding: 2em 0 2em 0;
 }
 
 .formulario label{
-    font-size: 1.1em;
+    font-size: 1.2em;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .formulario input{
-
-    width: 14em;
-    height: 1.1em;
+    width: 100%;
+    height: 40%;
     margin-top: 0.2em;
     margin-bottom: 0em;
     background-color: aliceblue;
@@ -37,7 +42,7 @@
 
 .formulario select{
     width: 15.8em;
-    height: 3em;
+    height: 50%;
     font-size: 12px;   
     background-color: aliceblue;
     margin-top: 0.2em;
@@ -46,15 +51,29 @@
 
 
 
-.nombre, .dificultad, .duracion, .paises, .temporada{
+.nombre, .dificultad,.paises,.duracion,.temporada{
     height: 4.5em;
+    width: 70%;
     margin-bottom: 1em;    
+}
+
+.paises{
+    margin-bottom: 0.4em;
+}
+
+.temporada, .paises{
+    align-items: center;
+    text-align: center;
 }
 
 .temporada option{
     background-color: aliceblue;
     color: black;
-    
+}
+
+.temporada select{
+    width: 100%;
+    margin: 0 auto;
 }
 
 .formulario p{
@@ -68,6 +87,7 @@
 
 .btn{
     margin-top: 0;
+    margin-bottom: 1em;
     height: 2em; 
     text-align: center;
     line-height: 0.5em;
@@ -78,9 +98,10 @@
 
 .lista{
     background-color: white;
-    width: 20em;
+    width: 70%;
     height: 6em;
     display: grid;
+    margin-top: 1em;
 
 }
 
@@ -124,4 +145,13 @@
 .ValorTemporada{
     color: black;
     font-weight: 1;
+}
+
+
+
+@media(max-width: 768px){
+ 
+    .formulario{
+        width: 90%;
+    }
 }

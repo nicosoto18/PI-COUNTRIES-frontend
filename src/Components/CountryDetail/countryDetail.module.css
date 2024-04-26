@@ -1,12 +1,13 @@
 .contenedor{
-    width: 100%;
+    width: 100% !important;
     height: 100%;
-    /* background-color:aqua ;  */
-    display: flex;
+    margin: 0 auto;   
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: white; */
+    
 }
 
 .btBack{
@@ -17,34 +18,24 @@
    margin-top: 5px;
    margin-left: 5px;
 }
-
-.card{
-   /* background-color: brown; */
-    width: 70%;
-    height: 100%;
-    display: flex;
+.contenedorCard{
     margin-top: 2em;
-    margin-bottom: 2em;
 }
 
-.titulo{
-    width: 100%;
-    height: auto;
-    text-align: center;
-    border-bottom: 0.2em solid RGB(15, 81, 9);
-
-}
 .Actividades{
-    background-color: white;
     width: 85%;
+    margin: 0 auto;
+    margin-top: 3em;
     height: auto; 
-     display: flex;
-     justify-content: space-around;
-     flex-wrap: wrap;  
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;  
 }
+
+
 
 .actividad{
-    background-color:#FFFFFF70;
+    background-color: rgb(197, 197, 235, 0.5);
     border: 0.2em solid RGB(15, 81, 9) ;
     color: black;
     width: 20%;
@@ -61,6 +52,24 @@
     margin-top: 2%;  
 }
 
+
+@media(max-width: 768px){
+    
+.Actividades{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 3em;
+    height: auto; 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;  
+}
+
+ 
+    .actividad{
+    width: 45%;
+  }
+}
 
 
 

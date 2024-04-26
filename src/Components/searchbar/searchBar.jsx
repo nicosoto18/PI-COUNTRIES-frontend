@@ -24,7 +24,7 @@ const SearchBar = () => {
   };
 
   return (
-    <div>
+    <div className={style.searchBarr}>
       <input className={style.inputSearch} type="text" value={country} onChange={handleChange} />
      
       <button onClick={handleClick}>Buscar</button>

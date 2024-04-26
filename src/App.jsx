@@ -1,7 +1,6 @@
-import "./App.css";
 import { Routes, Route } from "react-router-dom";
 //COMPONENTS
-import Bienvenida from "./Components/bienvenida/Bienvenida";
+import Welcome from "./Components/bienvenida/Welcome.jsx";
 import Home from "./Components/home/Home";
 import CountryDetail from "./Components/CountryDetail/CountryDetail.jsx";
 import Form from "./Components/form/Form";
@@ -10,10 +9,10 @@ axios.defaults.baseURL = "https://racial-color-production.up.railway.app/"
 
 function App() {
   return (
-    <div>
+    <div >
       <Routes>
        
-        <Route path="/" element={<Bienvenida />} />
+        <Route path="/" element={<Welcome/>} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Detail/:id" element={<CountryDetail />} />
         <Route path="/Form" element={<Form/>}/>

@@ -12,3 +12,16 @@
 .inputSearch:focus{
     border : 0.1em solid cadetblue;
 }
+
+
+@media (max-width : 768px){
+    .searchBarr{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}

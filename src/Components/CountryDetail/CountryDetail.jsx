@@ -19,14 +19,14 @@ const CountryDetail = () => {
   }, [id]);
 
   return (
-    <div className={style.contenedor}>
+      <>
       <div className={style.btBack}>
         <Link to="/Home">
           <button>back</button>
         </Link>
       </div>
 
-      <div className={style.card}>
+        <div className={style.contenedorCard}>
         <Card
           Nombre={detail.Nombre}
           Id={detail.Id}
@@ -36,13 +36,13 @@ const CountryDetail = () => {
           Area={detail.Area}
           Poblacion={detail.Poblacion}
           Imagen={detail.Imagen}
-        />
-      </div>
+          />
+          </div>
+          
+   
+
       {hayActividad ? (
         <div className={style.Actividades}>
-          <div className={style.titulo}>
-            <h2>Actividades destacadas en este país</h2>
-          </div>
           {detail.Activities.map((activity,index) => (
             
             <div className={style.actividad} key={index}>
@@ -54,7 +54,8 @@ const CountryDetail = () => {
           ))}
         </div>
       )  : null}
-    </div>
+   
+      </>
   );
 };
 
