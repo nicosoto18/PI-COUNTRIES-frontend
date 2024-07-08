@@ -126,7 +126,13 @@ select:hover{
 
 }
 
-
+.btnLoading{
+    text-align: center;
+    margin-top: 10vh;
+}
+.textLoading{
+    text-align: center;
+}
 
 @media (max-width: 768px) {
     

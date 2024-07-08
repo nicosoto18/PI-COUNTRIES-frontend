@@ -12,7 +12,9 @@ import {
   orderCountries,
 } from "../redux/actions";
 
+
 const Home = () => {
+  const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
   const filterCountriesData = useSelector((state) => state.filterCountries);
   const AllActivities = useSelector((state) => state.allActivities);
@@ -23,9 +25,14 @@ const Home = () => {
 
 
   useEffect(() => {
-    dispatch(allCountries());
-    dispatch(allActivities());
+    const fetchData = async()=>{
+      await dispatch(allCountries());
+      await dispatch(allActivities());
+      setLoading(false)
+    }
 
+    fetchData()
+   
     const handleResize = () => {
       setNoEsMovil(window.innerWidth > 768);
     };
@@ -97,6 +104,7 @@ const Home = () => {
 
   return (
     <div className={style.Home}>
+      
       {noEsMovil ? (
         <div className={style.navegacion}>
           <div className={style.BotonesNav}>
@@ -259,7 +267,16 @@ const Home = () => {
             </button>
           </div>
         </div>
+        
+        {
+          loading && <div className={style.conteinterLoading}>
+            <h3 className={style.btnLoading}>Cargando...</h3>
+            <p className={style.textLoading}>Puede tardar algunos segundos ya que el servidor esta alojado en un hosting gratuito..</p>
+            </div>
+        }
 
+        {
+          !loading && 
         <div className={style.lasCard}>
           {displayedCountries.map((country, index) => (
             <div className={style.cardIndividual} key={index}>
@@ -277,6 +294,9 @@ const Home = () => {
             </div>
           ))}
         </div>
+        }
+
+        
       </div>
     </div>
   );
